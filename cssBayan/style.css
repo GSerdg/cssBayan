@@ -16,6 +16,7 @@ img {
 .closed {
     font-size: 2em;
     transition: transform .5s;
+    color: rgb(60, 60, 207);
 }
 
 
@@ -88,12 +89,28 @@ img {
 
 .button-input:checked~.button-menu .closed {
     transform: rotate(45deg);
+    color: black;
 }
+
+.menu-container:active>.mem-container>img {
+    opacity: 0.8;
+}
+
+.menu-container:active>.button-menu>span {
+    color: rgb(60, 60, 207) !important;
+}
+
+.menu-container:active>.button-menu>h3 {
+    color: rgb(60, 60, 207) !important;
+}
+
 
 @media (hover: hover) and (pointer: fine) {
     .closed {
         display: none;
+        color: black;
     }
+
     @media (min-width: 900px) {
 
         .content-container:hover .button-menu>h3 {
@@ -115,12 +132,6 @@ img {
         .button-input:hover~.button-menu .closed {
             transform: rotate(45deg);
         }
-    }
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .closed {
-        display: none;
     }
 
     @media (min-width:700px) and (max-width: 899px) {
@@ -145,12 +156,6 @@ img {
             transform: rotate(45deg);
         }
     }
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .closed {
-        display: none;
-    }
 
     @media (min-width:500px) and (max-width: 699px) {
 
@@ -174,6 +179,7 @@ img {
             transform: rotate(45deg);
         }
     }
+
 }
 
 @media (min-width:700px) and (max-width: 899px) {
@@ -241,7 +247,6 @@ img {
     .button-input:checked~.mem-container {
         padding-bottom: .7em;
     }
-
 }
 
 @media (min-width:300px) and (max-width: 499px) {
