@@ -51,7 +51,7 @@ img {
     height: 3em;
     align-items: center;
     border-top: solid;
-    border-top-width: 1px;
+    border-top-width: 0.1em;
     cursor: pointer;
     justify-content: space-between
 }
