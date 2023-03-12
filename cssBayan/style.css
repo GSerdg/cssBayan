@@ -14,11 +14,10 @@ img {
 }
 
 .closed {
-    font-size: 2em;
-    transition: transform .5s;
+    font-size: 2.5em;
+    transition: transform .3s;
     color: rgb(60, 60, 207);
 }
-
 
 .container {
     display: flex;
@@ -210,6 +209,11 @@ img {
     .button-input:checked~.mem-container img {
         width: 19em;
     }
+
+    .closed {
+        font-size: 2em;
+    }
+
 }
 
 @media (min-width:500px) and (max-width: 699px) {
@@ -247,9 +251,14 @@ img {
     .button-input:checked~.mem-container {
         padding-bottom: .7em;
     }
+
+    .closed {
+        font-size: 1.7em;
+    }
+
 }
 
-@media (min-width:300px) and (max-width: 499px) {
+@media (max-width: 499px) {
     .header>h1 {
         font-size: 1.5em;
     }
@@ -281,6 +290,10 @@ img {
 
     .button-input:checked~.mem-container {
         padding-bottom: .4em;
+    }
+
+    .closed {
+        font-size: 1.3em;
     }
 
 }
